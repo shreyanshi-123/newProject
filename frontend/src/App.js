@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home from './components/Home/Home';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import TermsConditions from './components/TermsConditions/TermsConditions';
+import PageNotFound from './components/Layout/PageNotFound';
+import Dashboard from './components/Dashboard/dashboard';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  
+
+      <BrowserRouter basename='/clotya'  >
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/terms-conditions' element={<TermsConditions />} />
+            <Route path='*' element={<PageNotFound />} />
+
+            
+          {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+           
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

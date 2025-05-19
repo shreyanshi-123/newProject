@@ -1,13 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jost";
+  src: url('../public/assets/font/Jost-VariableFont_wght.ttf');
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  position: relative;
+  font-family: 'Jost', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.cookie-banner{
+  top: 0 !important;
+  bottom: 0;
+  left: 0 !important;
+  right: 0 !important;
+  max-width: 35%;
+  height: fit-content;
+  margin: auto;
+}
+@media(max-width: 1200px){
+  .cookie-banner{
+    max-width: 50%;
+  }
+}
+@media(max-width: 767px){
+  .cookie-banner{
+    max-width: 90%;
+  }
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'jost', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'jost', sans-serif;
+}
+.font-norms{
+  font-family: 'TT Norms', sans-serif;
+}
+
+.font-rubik{
+  font-family: "Rubik";
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+}
+.primary-bg{
+  background-color: #f7f7f7;
+}
+.primary-brown{
+  background-color: #8F6445;
+}
+:focus-visible{
+  outline: unset;
+}
+.container {
+  max-width: 1290px;
+  padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+/* Lightbox */
+.yarl__container {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.single-lightbox .yarl__button.yarl__navigation_prev,
+.single-lightbox .yarl__button.yarl__navigation_next {
+  display: none;
+}
+
+.aminities-group:hover .animate-wobble{
+  animation-name: animation-wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation-wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+      transform: translateX(-6px);
+  }
+  49.95% {
+      transform: translateX(4px);
+  }
+  66.6% {
+      transform: translateX(-2px);
+  }
+  83.25% {
+      transform: translateX(1px);
+  }
+  100% {
+      transform: translateX(0);
+  }
 }
