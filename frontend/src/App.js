@@ -13,7 +13,7 @@ function App() {
     <>
   
 
-      <BrowserRouter basename='/clotya'  >
+      <BrowserRouter  >
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />

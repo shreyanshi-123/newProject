@@ -360,7 +360,7 @@ const [categories, setCategories] = useState([]);
       {/* Navigation Bar */}
       <div className="navigation text-white absolute w-full">
         <div className="bg-black text-white text-[12px] text-center relative py-2.5">
-          <div class="container  m-auto">
+          <div className="container  m-auto">
             <p className='text-[12px] uppercase tracking-[0.25px]'>SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%! <a href="/shop" className='font-semibold'>SHOP NOW</a></p>
           </div>
         </div >
@@ -723,7 +723,7 @@ const [categories, setCategories] = useState([]);
                         <div className="columns w-1/2"></div>
                         <div className="columns w-1/2 flex items-center">
                           <div className='flex flex-col'>
-                            <div className="part-two mb-[20px]"><h2 class="text-white font-medium text-[40px] leading-[1] mb-[30px]">The latest men's trends <br />
+                            <div className="part-two mb-[20px]"><h2 className="text-white font-medium text-[40px] leading-[1] mb-[30px]">The latest men's trends <br />
                               this season</h2>
                               <p className='text-[22px] mb-[20px] text-white leading-[1]'>New collections!</p></div>
                             <div>  <button className='py-2 px-10 rounded-[40px] border-1 border-primary-red hover:bg-white hover:text-primary-red font-medium text-[20px] hover:border-primary-red bg-primary-red shop-now text-white leading-[1.4]'>Shop now</button></div>
@@ -804,34 +804,34 @@ const [categories, setCategories] = useState([]);
                               <div className="image-wrapper">  <img src={MenMegaMenu3} alt="" className='img1' />
                                 <img src={MenMegaMenu4} alt="" className='img2' />
                               </div>
-                              <div class="product-label absolute">
-                                <span class="onsale percent">
+                              <div className="product-label absolute">
+                                <span className="onsale percent">
                                   <span>-70%</span>
                                 </span>
-                                <span class="featured">
+                                <span className="featured">
                                   <span>Hot</span>
                                 </span>
                               </div>
                               <div className="product-group-button">
 
 
-                                <div class="button-in quickshop">
-                                  <a class="quickshop" href="#"><FontAwesomeIcon icon={faSearch} /></a>
-                                  <span class="ts-tooltip button-tooltip">Compare</span>
+                                <div className="button-in quickshop">
+                                  <a className="quickshop" href="#"><FontAwesomeIcon icon={faSearch} /></a>
+                                  <span className="ts-tooltip button-tooltip">Compare</span>
                                 </div>
 
-                                <div class="button-in compare">
-                                  <a class="compare" href="/" ><FontAwesomeIcon icon={faBarChart} /></a>
-                                  <span class="ts-tooltip button-tooltip">Quick view</span>
+                                <div className="button-in compare">
+                                  <a className="compare" href="/" ><FontAwesomeIcon icon={faBarChart} /></a>
+                                  <span className="ts-tooltip button-tooltip">Quick view</span>
                                 </div>
 
-                                <div class="button-in wishlist">
+                                <div className="button-in wishlist">
 
-                                  <a href="/" class=""><FontAwesomeIcon icon={faHeart} />
+                                  <a href="/" className=""><FontAwesomeIcon icon={faHeart} />
                                   </a>
-                                  <span class="ts-tooltip button-tooltip">Wishlist</span>
+                                  <span className="ts-tooltip button-tooltip">Wishlist</span>
                                 </div>
-                                <a href="/"> <div class="loop-add-to-cart py-[7.5px] px-[10px] bg-black text-white text-center font-medium hover:bg-primary-red"><span class="ts-tooltip  text-[18px] leading-[1.4] font-medium">Select options</span></div></a>
+                                <a href="/"> <div className="loop-add-to-cart py-[7.5px] px-[10px] bg-black text-white text-center font-medium hover:bg-primary-red"><span className="ts-tooltip  text-[18px] leading-[1.4] font-medium">Select options</span></div></a>
                               </div>
                             </div>
                             <div className="wrapper-shop-header pt-[20px]">
@@ -887,7 +887,7 @@ const [categories, setCategories] = useState([]);
                     className={`text-white  cursor-pointer`}
                     size="lg"
                   />
-                  <span class="count klbwl-wishlist-count absolute bg-primary-red text-white font-semibold text-[10px] rounded-[50%] top-0 right-[-2px] min-h-[15px] min-w-[15px] py-[2px] flex items-center justify-center">0</span>
+                  <span className="count klbwl-wishlist-count absolute bg-primary-red text-white font-semibold text-[10px] rounded-[50%] top-0 right-[-2px] min-h-[15px] min-w-[15px] py-[2px] flex items-center justify-center">0</span>
 
                 </div>
                 <div className='header-button'>
@@ -901,20 +901,20 @@ const [categories, setCategories] = useState([]);
                           className={`text-white  cursor-pointer`}
                           size="lg"
                         />
-                        <span class="count klbwl-wishlist-count absolute bg-primary-red text-white font-semibold text-[10px] rounded-[50%] top-0 right-[0px] min-h-[15px] min-w-[15px] py-[2px] flex items-center justify-center">0</span>
+                        <span className="count klbwl-wishlist-count absolute bg-primary-red text-white font-semibold text-[10px] rounded-[50%] top-0 right-[0px] min-h-[15px] min-w-[15px] py-[2px] flex items-center justify-center">0</span>
                       </div>
                     </div>
                   </a>
-                  <div class="cart-dropdown ">
-                    <div class="cart-dropdown-wrapper">
-                      <div class="fl-mini-cart-content">
+                  <div className="cart-dropdown ">
+                    <div className="cart-dropdown-wrapper">
+                      <div className="fl-mini-cart-content">
 
 
-                        <div class="cart-empty">
-                          <div class="empty-icon">
+                        <div className="cart-empty">
+                          <div className="empty-icon">
                             <img src={ShoppingBag} alt="" />
                           </div>
-                          <div class="empty-text">No products in the cart.</div>
+                          <div className="empty-text">No products in the cart.</div>
                         </div>
 
                       </div>

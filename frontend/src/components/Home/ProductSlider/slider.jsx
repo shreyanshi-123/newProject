@@ -133,10 +133,10 @@ const HoverProductSlider = () => {
   return (
     <section className="max-w-7xxl mx-auto Product-section category-section mb-[40px] lg:my-[40px] ">
       <div className="">
-        <div class="site-module p-[15px]">
-          <div class="module-header flex flex-col lg:flex-row justify-between mt-[25px] lg:mt-[0px] lg:mb-[30px] pb-[15px] lg:pb-[0px]">
-            <h3 class="entry-title max-w-full mb-[8px] lg:max-w-[35%] font-medium text-[20px] lg:text-[30px]">Featured Products</h3>
-            <div class="entry-description max-w-[840px] lg:max-w-[60%] text-[#75767c] text-[14px] lg:text-[17px] font-[300]"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p></div>
+        <div className="site-module p-[15px]">
+          <div className="module-header flex flex-col lg:flex-row justify-between mt-[25px] lg:mt-[0px] lg:mb-[30px] pb-[15px] lg:pb-[0px]">
+            <h3 className="entry-title max-w-full mb-[8px] lg:max-w-[35%] font-medium text-[20px] lg:text-[30px]">Featured Products</h3>
+            <div className="entry-description max-w-[840px] lg:max-w-[60%] text-[#75767c] text-[14px] lg:text-[17px] font-[300]"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p></div>
           </div>
         </div>
         <Slider {...settings} className=''>
@@ -156,7 +156,7 @@ const ProductCard = ({ product, badge }) => {
 
     <div className="product-card ">
       <div className="thumbnail-wrapper mb-[20px]">
-        <div class="product-badges"> {badge && (
+        <div className="product-badges"> {badge && (
           <div className="product-badges absolute left-[10px] top-[10px] bg-white z-30">
             <span className={`badge style-1 trending font-medium ${badge.text}`}>
               {badge.title}
@@ -198,26 +198,26 @@ const ProductCard = ({ product, badge }) => {
         </div>
       </div>
 
-      <div class="content-wrapper">
-        <div class="content-switcher">
-          <div class="product-swatches mb-[10px]">
-            <div class="product-review flex gap-2.5">
-              <div class="stars flex gap-[6px] items-center">
+      <div className="content-wrapper">
+        <div className="content-switcher">
+          <div className="product-swatches mb-[10px]">
+            <div className="product-review flex gap-2.5">
+              <div className="stars flex gap-[6px] items-center">
                 <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#edbc30]" /></div>
               <span className='font-medium text-[13px]'>{product.Review} </span>
             </div>
           </div>
         </div>
-        <h3 class="product-title text-[15px] mb-[8px]"><a href="#">{product.title}</a></h3>
-        <span class="price">
+        <h3 className="product-title text-[15px] mb-[8px]"><a href="#">{product.title}</a></h3>
+        <span className="price">
 
-          <span class="woocommerce-Price-amount amount font-[14.1px] opacity-[0.3] line-through mr-2">
-            <span class="woocommerce-Price-currencySymbol">$</span>25.90
+          <span className="woocommerce-Price-amount amount font-[14.1px] opacity-[0.3] line-through mr-2">
+            <span className="woocommerce-Price-currencySymbol">$</span>25.90
           </span>
-          {/* <span class="screen-reader-text">Original price was: $25.90.</span> */}
-          <span class="woocommerce-Price-amount amount font-medium">
-            <span class="woocommerce-Price-currencySymbol">$</span>{product.price}</span>
-          {/* <span class="screen-reader-text">Current price is: $19.90.</span> */}
+          {/* <span className="screen-reader-text">Original price was: $25.90.</span> */}
+          <span className="woocommerce-Price-amount amount font-medium">
+            <span className="woocommerce-Price-currencySymbol">$</span>{product.price}</span>
+          {/* <span className="screen-reader-text">Current price is: $19.90.</span> */}
         </span>
       </div>
     </div>

@@ -14,6 +14,7 @@ const AngleRight = ` ${process.env.REACT_APP_API_URL}/assets/images/right-arrow-
 const BannerSlider = () => {
   const [scrolled, setScrolled] = useState(false);
 
+
   // Detect scroll position and add/remove class
   useEffect(() => {
     const handleScroll = () => {
@@ -55,6 +56,7 @@ const BannerSlider = () => {
         <img src={AngleRight} alt="" />
       </div>
     ),
+    
   };
 
   const slides = [
