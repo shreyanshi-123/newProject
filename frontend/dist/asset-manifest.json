@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf61efd1.css",
+    "main.js": "/static/js/main.11beddad.js",
+    "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
+    "static/media/Jost-VariableFont_wght.ttf": "/static/media/Jost-VariableFont_wght.34835cd554b7b71732e2.ttf",
+    "index.html": "/index.html",
+    "main.bf61efd1.css.map": "/static/css/main.bf61efd1.css.map",
+    "main.11beddad.js.map": "/static/js/main.11beddad.js.map",
+    "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf61efd1.css",
+    "static/js/main.11beddad.js"
+  ]
+}
