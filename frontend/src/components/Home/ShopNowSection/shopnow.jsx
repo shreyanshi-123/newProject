@@ -43,7 +43,7 @@ const ShopNow = () => {
                                     onMouseEnter={() => setActiveProduct('one')}
                                     onMouseLeave={() => setActiveProduct(null)}
                                 >
-                                    <a href="" className={`product-card-one max-w-[410px] w-full max-h-[260px] h-full absolute left-[-6%] top-[32%] ${activeProduct === 'one' ? 'active' : ''}`}>
+                                    <a href="javascript:void(0)" className={`product-card-one max-w-[410px] w-full max-h-[260px] h-full absolute left-[-6%] top-[32%] ${activeProduct === 'one' ? 'active' : ''}`}>
 
                                         <div className="product-wrapper flex items-center bg-white">
                                             <div className="image-part w-[48%] relative">
@@ -61,7 +61,7 @@ const ShopNow = () => {
                                                     <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#000]" />
                                                     <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#e6e6e6]" />
                                                 </div>
-                                                <div className="btn-shop-prod" >  <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Add to cart</button></div>
+                                                <div className="btn-shop-prod" > <a href=""> <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Add to cart</button></a></div>
 
                                             </div>
                                         </div>
@@ -96,7 +96,7 @@ const ShopNow = () => {
                                                         <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#000]" />
                                                         <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#e6e6e6]" />
                                                     </div>
-                                                    <div className="btn-shop-prod" >  <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Add to cart</button></div>
+                                                    <div className="btn-shop-prod" > <a href=""> <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Add to cart</button></a></div>
 
                                                 </div>
                                             </div>
@@ -130,7 +130,7 @@ const ShopNow = () => {
                                                         <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#000]" />
                                                         <FontAwesomeIcon icon={faStar} className=" text-[12px] text-[#e6e6e6]" />
                                                     </div>
-                                                    <div className="btn-shop-prod" > <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Select options</button></div>
+                                                    <div className="btn-shop-prod" > <a href=""> <button className='bg-black text-white black-btn-shop rounded-[30px] flex items-center gap-2'><img src={cart} alt="" className='w-[20px] h-[20px] invert' />Select options</button></a></div>
 
                                                 </div>
                                             </div>

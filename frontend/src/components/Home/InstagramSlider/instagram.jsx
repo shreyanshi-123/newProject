@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import Slider from 'react-slick';
-// import { InstagramEmbed } from 'react-social-media-embed';
+import { InstagramEmbed } from 'react-social-media-embed';
 import axios from 'axios';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './instaslider.css'
 
 const Post1 = `${process.env.REACT_APP_API_URL}/assets/images/instagram/post1.jpg`
