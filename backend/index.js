@@ -16,12 +16,12 @@ app.use(cors());
 app.use(express.json());
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+// app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Handle requests by serving index.html for all routes
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
+});
 
 // Use the category routes
 app.use('/api', categoryRoutes); // Prefix '/api' for all routes from categoryRoutes
